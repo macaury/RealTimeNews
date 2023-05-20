@@ -23,7 +23,7 @@ class G1GloboSpider(scrapy.Spider):
 
         dados = {'noticias': noticias}
         
-        path_data = "News/News/data_json/g1.json"
+        path_data = "data_json/g1.json"
 
         with open(path_data, 'w', encoding='utf-8') as arquivo:
             json.dump(dados, arquivo, ensure_ascii=False, indent=4)
