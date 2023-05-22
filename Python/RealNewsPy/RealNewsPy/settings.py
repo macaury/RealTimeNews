@@ -1,4 +1,4 @@
-# Scrapy settings for News project
+# Scrapy settings for RealNewsPy project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "News"
+BOT_NAME = "RealNewsPy"
 
-SPIDER_MODULES = ["News.spiders"]
-NEWSPIDER_MODULE = "News.spiders"
+SPIDER_MODULES = ["RealNewsPy.spiders"]
+NEWSPIDER_MODULE = "RealNewsPy.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "News (+http://www.yourdomain.com)"
+#USER_AGENT = "RealNewsPy (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "News.middlewares.NewsSpiderMiddleware": 543,
+#    "RealNewsPy.middlewares.RealnewspySpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "News.middlewares.NewsDownloaderMiddleware": 543,
+#    "RealNewsPy.middlewares.RealnewspyDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "News.pipelines.NewsPipeline": 300,
+#    "RealNewsPy.pipelines.RealnewspyPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

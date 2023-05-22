@@ -1,0 +1,14 @@
+{
+    "g1.globo.com": [
+        { 
+            "domain_rep": "g1.globo.com",
+            "url_rep": "https://g1.globo.com",
+            "noticia_rep": ".feed-post-body",
+            "titulo_rep": ".gui-color-hover a::text",
+            "hora_rep": ".feed-post-datetime ::text",
+            "img_rep": ".bstn-fd-picture-image ::attr(srcset)",
+            "link_rep": ".feed-post-figure-link ::attr(href)",
+            "categoria_rep": ".feed-post-metadata-section ::text"
+        }
+    ]
+}
