@@ -1,14 +1,32 @@
 {
     "g1.globo.com": [
-        { 
+        {
             "domain_rep": "g1.globo.com",
             "url_rep": "https://g1.globo.com",
             "noticia_rep": ".feed-post-body",
             "titulo_rep": ".gui-color-hover a::text",
-            "hora_rep": ".feed-post-datetime ::text",
             "img_rep": ".bstn-fd-picture-image ::attr(srcset)",
-            "link_rep": ".feed-post-figure-link ::attr(href)",
-            "categoria_rep": ".feed-post-metadata-section ::text"
+            "link_rep": ".feed-post-figure-link ::attr(href)"
+        }
+    ],
+    "uol.com.br": [
+        {
+            "domain_rep": "uol.com.br",
+            "url_rep": "https://www.uol.com.br",
+            "noticia_rep": ".headlineSub",
+            "titulo_rep": ".headlineSub__content__title ::text",
+            "img_rep": ".headlineSub__image ::attr(srcset)",
+            "link_rep": ".headlineSub__link ::attr(href)"
+        }
+    ],
+    "cnnbrasil.com.br": [
+        {
+            "domain_rep": "cnnbrasil.com.br",
+            "url_rep": "https://www.cnnbrasil.com.br/",
+            "noticia_rep": ".home__list__item--first",
+            "titulo_rep": ".home__list__item--first h3::text",
+            "img_rep": ".home__list__item--first img::attr(src)",
+            "link_rep": ".home__list__item--first a::attr(href)"
         }
     ]
 }
