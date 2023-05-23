@@ -12,19 +12,20 @@ def main(domain, url):
 
         def parse(self, response):
 
-            path_json_journal = "../journal.json"
+            path_json_journal = "data_json/journals.json/journal.json"
 
-            with open(path_json_journal) as arquivo_json:
+            with open(path_json_journal, encoding='utf-8') as arquivo_json:
                 dats = json.load(arquivo_json)
 
-                domain_rep = dats['domain_rep']
-                url_rep = dats['url_rep']
-                noticia_rep = dats['noticia_rep']
-                titulo_rep = dats['titulo_rep']
-                hora_rep = dats['hora_rep']
-                img_rep = dats['img_rep']
-                link_rep = dats['link_rep']
-                categoria_rep = dats['categoria_rep']
+                #domain_rep = dats["g1.globo.com"][0]["domain_rep"]
+                noticia_rep = dats[domain][0]["noticia_rep"]
+                titulo_rep = dats[domain][0]["titulo_rep"]
+                hora_rep = dats[domain][0]["hora_rep"]
+                img_rep = dats[domain][0]["img_rep"]
+                link_rep = dats[domain][0]["link_rep"]
+                categoria_rep = dats[domain][0]["categoria_rep"]
+
+            print(dats)
 
             noticias = []
             for noticia in response.css(noticia_rep):
