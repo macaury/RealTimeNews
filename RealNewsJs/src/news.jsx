@@ -1,15 +1,17 @@
-import React from "react";
+
+
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+
+import "./news.css"
 
 function News() {
   return (
-    <>
-      <div className="conteiner">
-        
-
-
-
-      </div>
-    </>
+    <Container fluid>
+      <Row>
+        <div className=".teste">a</div>
+      </Row>
+    </Container>
   );
 }
 
