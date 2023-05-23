@@ -1,12 +1,12 @@
-import datass from "../../data_json/g1.json"
-
+import News from "./news"
+import React from "react"
 
 function App() {
 
   return (
-    
-    console.log(datass)
-  )
+
+      <News/>
+    )
 }
 
 export default App
