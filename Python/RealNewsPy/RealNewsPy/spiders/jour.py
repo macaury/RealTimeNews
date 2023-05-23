@@ -23,6 +23,7 @@ def main(domains, urls):
                 link_rep = data["link_rep"]
 
             noticias = []
+            count = 0  
             for noticia in response.css(noticia_rep):
                 titulo = noticia.css(titulo_rep).get()
                 imagem = noticia.css(img_rep).get()
@@ -30,6 +31,11 @@ def main(domains, urls):
 
                 noticia_dict = {'titulo': titulo, 'imagem': imagem, 'link': link}
                 noticias.append(noticia_dict)
+
+                count += 1 
+
+                if count >= 10:  
+                    break 
 
             dados = {domain: noticias}
 
@@ -43,4 +49,4 @@ def main(domains, urls):
     
     process = CrawlerProcess()
     process.crawl(G1GloboSpider)
-    process.start() 
+    process.start()

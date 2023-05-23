@@ -29,4 +29,27 @@
             "link_rep": ".home__list__item--first a::attr(href)"
         }
     ]
+    ,
+    "piaui.folha.uol.com.br": [
+        {
+            "domain_rep": "piaui.folha.uol.com.br",
+            "url_rep": "https://piaui.folha.uol.com.br",
+            "noticia_rep": ".main__noticia--noticia",
+            "titulo_rep": ".main__noticia--noticia h2::text",
+            "img_rep": ".main__noticia--img::attr(style)",
+            "link_rep": ".main__noticia a::attr(href)"
+        }
+    ]
+    ,
+    "elpais.com": [
+        {
+            "domain_rep": "elpais.com",
+            "url_rep": "https://elpais.com/america/",
+            "noticia_rep": ".c--m ",
+            "titulo_rep": ".c_t a::text",
+            "img_rep": ".c_m_e ::attr(srcset)",
+            "link_rep": ".c_t a::attr(href)"
+        }
+    ]
 }
+
