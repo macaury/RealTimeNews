@@ -1,40 +1,51 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
-
-import React from "react";
+//import React from "react";
 import Row from "react-bootstrap/Row";
 
 import styled from "styled-components";
 
 function News() {
-  const Button = styled.button`
-    background: ${props => (props.$primary ? "#BF4F74" : "white")};
-    color: ${props => (props.$primary ? "white" : "#BF4F74")};
+  const LayoutMo = styled.section``;
 
-    font-size: 1em;
-    margem: 0.5rem;
-    border: 2px solid #bf4f74;
-    border-radius: 3px;
+  const Retangulo = styled.section`
+    border: 1px solid red;
+    min-width: 350px;
+    height: 150px;
   `;
 
+  const Img = styled.section`
+    height: 90px;
+    width: 90px;
+    border: 0.5px solid green;
+  `;
 
+  const Titulo = styled.section`
+  
+  
+  `;
   return (
     <>
-      <Row>
-       
-      </Row>
+      <LayoutMo>
+        <Row>
+          <Retangulo>
+            <Titulo >
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                mollis volutpat ex
+              </span>
+            </Titulo>
+            <Img></Img>
+          </Retangulo>
+        </Row>
+      </LayoutMo>
     </>
   );
 }
 
 export default News;
 
-/** 
- * 
- * 
- * 
- *  max-width: 480px;
-    min-width: 320px;
-    align:center;
-    position:absolute;
+/**
+ *
+ *
+ *
+ *
  */

@@ -5,6 +5,8 @@ import Row from "react-bootstrap/Row";
 
 import styled from "styled-components";
 
+import News from './news.jsx'
+
 function App() {
   const Button = styled.button`
     background: ${props => (props.$primary ? "#BF4F74" : "white")};
@@ -21,7 +23,10 @@ function App() {
     width: 100%;
   `;
   const Layout_main = styled.section`
-   
+  max-width: 480px;
+  min-width: 320px;
+  border:1px solid black;
+
   `;
   const Test_container = styled.section `
   
@@ -29,17 +34,12 @@ function App() {
 
   return (
     <>
-      <Test_container>
+      
         <Layout_main>
           <Row>
-            <div>
-              <Button>Normal</Button>
-              <Button $primary>Primary</Button>
-              <Tesmato></Tesmato>
-            </div>
+           <News/>
           </Row>
         </Layout_main>
-      </Test_container>
     </>
   );
 }
