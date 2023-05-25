@@ -45,13 +45,3 @@ function App() {
 }
 
 export default App;
-
-/** 
- * 
- * 
- * 
- *  max-width: 480px;
-    min-width: 320px;
-    align:center;
-    position:absolute;
- */

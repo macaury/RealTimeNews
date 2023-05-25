@@ -25,8 +25,8 @@ function News() {
   return (
     <>
       <LayoutMo>
-        <Row>
-          <Retangulo>
+        <Row >
+          <Retangulo >
             <Titulo >
               <span>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
