@@ -4,11 +4,10 @@ import Row from "react-bootstrap/Row";
 import styled from "styled-components";
 
 function News() {
-  const LayoutMo = styled.section``;
 
   const Retangulo = styled.section`
     border: 1px solid red;
-    min-width: 350px;
+    width: 360px;
     height: 150px;
   `;
 
@@ -24,19 +23,17 @@ function News() {
   `;
   return (
     <>
-      <LayoutMo>
         <Row >
           <Retangulo >
             <Titulo >
+            <Img></Img>
               <span>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
                 mollis volutpat ex
               </span>
             </Titulo>
-            <Img></Img>
           </Retangulo>
         </Row>
-      </LayoutMo>
     </>
   );
 }

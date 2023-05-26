@@ -5,41 +5,49 @@ import Row from "react-bootstrap/Row";
 
 import styled from "styled-components";
 
-import News from './news.jsx'
+import News from "./news.jsx";
+
+import Img_logo from "./assets/logo_dark.svg";
 
 function App() {
-  const Button = styled.button`
-    background: ${props => (props.$primary ? "#BF4F74" : "white")};
-    color: ${props => (props.$primary ? "white" : "#BF4F74")};
-
-    font-size: 1em;
-    margem: 0.5rem;
-    border: 2px solid #bf4f74;
-    border-radius: 3px;
+  const Header = styled.nav`
+    height: 150px;
   `;
 
-  const Tesmato = styled(Button)`
-    background: pink;
-    width: 100%;
+  const Logo = styled.section`
+    display: block;
+    margin: auto !important;
   `;
+
   const Layout_main = styled.section`
-  max-width: 480px;
-  min-width: 320px;
-  border:1px solid black;
-
+    max-width: 480px;
+    min-width: 320px;
+    border: 1px solid black;
   `;
-  const Test_container = styled.section `
+  const Test_container = styled.section``;
+
+  const Logo_Write = styled.section`
   
-`;
+  color:#000;
+  
+  
+  `;
 
   return (
     <>
-      
-        <Layout_main>
-          <Row>
-           <News/>
-          </Row>
-        </Layout_main>
+      <Layout_main>
+        <Header>
+          <Logo>
+            <img src={Img_logo} alt="" />
+            <Logo_Write>
+              <span> RealTimeNews</span>
+            </Logo_Write>
+          </Logo>
+        </Header>
+        <Row>
+          <News />
+        </Row>
+      </Layout_main>
     </>
   );
 }
