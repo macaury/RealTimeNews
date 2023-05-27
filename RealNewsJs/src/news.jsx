@@ -1,6 +1,8 @@
 //import React from "react";
 import Row from "react-bootstrap/Row";
 
+//import { useEffect } from "react";
+
 import styled from "styled-components";
 
 function News() {
@@ -32,12 +34,17 @@ function News() {
     margin: 0 10px;
   `;
 
+
+   
+    
+  
   return (
     <>
       <Row>
         <Retangulo>
-          <Img></Img>
-          <Titulo> lorem lore</Titulo>
+            <Img> 
+           </Img>
+            <Titulo> </Titulo>
         </Retangulo>
       </Row>
     </>
@@ -45,10 +52,3 @@ function News() {
 }
 
 export default News;
-
-/**
- *
- *
- *
- *
- */
