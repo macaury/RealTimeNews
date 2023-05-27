@@ -7,44 +7,50 @@ import styled from "styled-components";
 
 import News from "./news.jsx";
 
-import Img_logo from "./assets/logo_dark.svg";
+import Img_logo from "./assets/logo_write.svg";
 
 function App() {
   const Header = styled.nav`
-    height: 150px;
+    margin:0;
+    padding:0;
+    height: 80px;
+    width:100%
+    background: #ffffff;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    display:fixed;
   `;
 
   const Logo = styled.section`
     display: block;
-    margin: auto !important;
+    margin: 40px auto;
+  `;
+
+  const Destaque = styled.section`
+    text-align: start;
+    background-color: #fff;
+    color: #000;
+    heigth: 82px;
+    font-size: 25px;
+    margin: 50px 0 20px 5px;
   `;
 
   const Layout_main = styled.section`
     max-width: 480px;
     min-width: 320px;
-    border: 1px solid black;
   `;
   const Test_container = styled.section``;
-
-  const Logo_Write = styled.section`
-  
-  color:#000;
-  
-  
-  `;
 
   return (
     <>
       <Layout_main>
         <Header>
           <Logo>
-            <img src={Img_logo} alt="" />
-            <Logo_Write>
-              <span> RealTimeNews</span>
-            </Logo_Write>
+            <img src={Img_logo} alt="" width={'120px'}/>
           </Logo>
         </Header>
         <Row>
+          <Destaque>Destaques dos jornais</Destaque>
+
           <News />
         </Row>
       </Layout_main>
