@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import React from "react";
 import Row from "react-bootstrap/Row";
 
 import styled from "styled-components";
@@ -9,7 +8,9 @@ import News from "./news.jsx";
 
 import Img_logo from "./assets/logo_write.svg";
 
+
 function App() {
+
   const Header = styled.nav`
     margin:0;
     padding:0;
@@ -19,7 +20,6 @@ function App() {
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
     display:fixed;
   `;
-
   const Logo = styled.section`
     display: block;
     margin: 40px auto;
@@ -45,7 +45,7 @@ function App() {
       <Layout_main>
         <Header>
           <Logo>
-            <img src={Img_logo} alt="" width={'120px'}/>
+            <img src={Img_logo} alt="" width={"120px"} />
           </Logo>
         </Header>
         <Row>

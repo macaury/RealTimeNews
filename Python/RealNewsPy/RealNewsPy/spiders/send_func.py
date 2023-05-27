@@ -4,7 +4,7 @@ import sys
 sys.path.append('./jour.py')
 
 
-json_file_path = "data_json/journals.json/journal.json"
+json_file_path = "data_json/journals/journal.json"
 with open(json_file_path) as file:
     data = json.load(file)
     domains = []

@@ -12,36 +12,32 @@ function News() {
     background: #ffffff;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 20px auto;
   `;
 
   const Img = styled.section`
     height: 79.76px;
     min-width: 100px;
-    border-radius:5px;
+    border-radius: 5px;
     border: 0.5px solid green;
     margin: 0 10px;
-
   `;
 
   const Titulo = styled.section`
-  color:#8A0909;
-  font-size:18px;
-  margin: 0 10px;
+    color: #8a0909;
+    font-size: 18px;
+    margin: 0 10px;
   `;
 
   return (
     <>
       <Row>
         <Retangulo>
-          <Img> </Img>
-          <Titulo>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-            mollis volutpat ex
-          </Titulo>
+          <Img></Img>
+          <Titulo> lorem lore</Titulo>
         </Retangulo>
       </Row>
     </>
