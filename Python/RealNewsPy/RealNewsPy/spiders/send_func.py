@@ -15,4 +15,9 @@ with open(json_file_path) as file:
         domains.append(domain)
         urls.append(url)
 
+
+
 main(domains, urls)
+
+
+
