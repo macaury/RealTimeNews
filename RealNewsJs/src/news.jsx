@@ -40,7 +40,7 @@ function News() {
 
   //const proxyUrl = "https://cors-anywhere.herokuapp.com/";
   const url =
-"../public/data_json/noticias.json";
+"../public/data_json/";
   const apiUrl =  url;
 
   useEffect(() => {
