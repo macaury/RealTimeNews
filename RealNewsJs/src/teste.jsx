@@ -4,7 +4,7 @@ function App() {
   const [scrapedData, setScrapedData] = useState(null);
 
   useEffect(() => {
-    fetch("/News")
+    fetch("/news")
       .then(response => response.json())
       .then(data => setScrapedData(data))
       .catch(error => console.log(error));
