@@ -65,7 +65,7 @@ def scrape_news(domains, urls):
 @app.route("/news", methods=['GET'])
 def main():
     with app.app_context():
-        json_file_path = "/journals/journal.json"
+        json_file_path = "./journals/journal.json"
         with open(json_file_path) as file:
             data = json.load(file)
             domains = []
@@ -79,10 +79,11 @@ def main():
         # Inicia a tarefa de scraping usando o Celery
         task = scrape_news.delay(domains, urls)
 
-        return jsonify({'task_id': task.id}), 202
-
-
-main()
+        # Aguarda a conclusão da tarefa e obtém o resultado
+        result = task.get()
+        testestt = jsonify(result)
+        print(testestt)
+        return jsonify(result)
 
 if __name__ == '__main__':
     app.run(debug=True)
