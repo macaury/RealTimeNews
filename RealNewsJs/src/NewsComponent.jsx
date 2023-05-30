@@ -1,4 +1,4 @@
-import  { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 function NewsComponent() {
@@ -22,20 +22,27 @@ function NewsComponent() {
 
   useEffect(() => {
     // Função para verificar o status da tarefa e obter o resultado
-    const fetchTaskStatus = async () => {
+    const fetchTaskResult = async () => {
       if (taskId) {
         try {
-          const response = await axios.get(`/task/${taskId}`);
-          const { status, result } = response.data;
+          let status = 'PENDING';
+          // Aguarda a conclusão da tarefa de scraping
+          while (status === 'PENDING') {
+            const response = await axios.get(`/task/${taskId}`);
+            status = response.data.status;
+            if (status === 'SUCCESS') {
+              setTaskResult(response.data.result);
+            }
+          }
+
           setTaskStatus(status);
-          setTaskResult(result);
         } catch (error) {
           console.error('Erro ao obter o status da tarefa:', error);
         }
       }
     };
 
-    fetchTaskStatus();
+    fetchTaskResult();
   }, [taskId]);
 
   return (

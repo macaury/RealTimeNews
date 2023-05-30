@@ -8,48 +8,6 @@
             "img_rep": ".bstn-fd-picture-image ::attr(srcset)",
             "link_rep": ".feed-post-figure-link ::attr(href)"
         }
-    ],
-    "uol.com.br": [
-        {
-            "domain_rep": "uol.com.br",
-            "url_rep": "https://www.uol.com.br",
-            "noticia_rep": ".headlineSub",
-            "titulo_rep": ".headlineSub__content__title ::text",
-            "img_rep": ".headlineSub__image ::attr(srcset)",
-            "link_rep": ".headlineSub__link ::attr(href)"
-        }
-    ],
-    "cnnbrasil.com.br": [
-        {
-            "domain_rep": "cnnbrasil.com.br",
-            "url_rep": "https://www.cnnbrasil.com.br/",
-            "noticia_rep": ".home__list__item--first",
-            "titulo_rep": ".home__list__item--first h3::text",
-            "img_rep": ".home__list__item--first img::attr(src)",
-            "link_rep": ".home__list__item--first a::attr(href)"
-        }
-    ]
-    ,
-    "piaui.folha.uol.com.br": [
-        {
-            "domain_rep": "piaui.folha.uol.com.br",
-            "url_rep": "https://piaui.folha.uol.com.br",
-            "noticia_rep": ".main__noticia--noticia",
-            "titulo_rep": ".main__noticia--noticia h2::text",
-            "img_rep": ".main__noticia--img::attr(style)",
-            "link_rep": ".main__noticia a::attr(href)"
-        }
-    ]
-    ,
-    "elpais.com": [
-        {
-            "domain_rep": "elpais.com",
-            "url_rep": "https://elpais.com/america/",
-            "noticia_rep": ".c--m ",
-            "titulo_rep": ".c_t a::text",
-            "img_rep": ".c_m_e ::attr(srcset)",
-            "link_rep": ".c_t a::attr(href)"
-        }
     ]
 }
 
