@@ -5,10 +5,8 @@ from .celery import app
 import time
 import json
 from celery import Celery
-from flask import Flask, jsonify
 import tqdm
 import requests
-from scrapy import Selector
 
 
 
