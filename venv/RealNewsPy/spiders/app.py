@@ -7,16 +7,6 @@ import requests
 from scrapy import Selector
 
 
-app = Flask(__name__)
-app.config.update(
-    CELERY_BROKER_URL='redis://localhost:6379',
-    CELERY_RESULT_BACKEND='redis://localhost:6379/0',
-    CELERYD_CONCURRENCY=10,
-    CELERYD_PREFETCH_MULTIPLIER=10
-)
-
-celery = Celery(app.import_name, broker=app.config['CELERY_BROKER_URL'])
-celery.conf.update(app.config)
 
 
 @celery.task
@@ -58,6 +48,7 @@ def scrape_news(domains, urls):
     # Retorna o conteúdo JSON
     conteudo = json.dumps(new_data, ensure_ascii=False, indent=4)
     return conteudo
+<<<<<<< Updated upstream
 
 
 @app.route("/news", methods=['GET'])
@@ -96,3 +87,5 @@ def main():
 
 if __name__ == '__main__':
     app.run(debug=True)
+=======
+>>>>>>> Stashed changes

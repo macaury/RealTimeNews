@@ -91,3 +91,16 @@ ROBOTSTXT_OBEY = True
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
+
+broker_url='transport://user:password@hostname:port/virtual_host'
+
+from kombu import Exchange, Queue
+task_default_queue = 'default' #1
+default_exchange = Exchange('media', type='direct') #2
+task_queues = (
+    Queue(
+        'media_queue', #3
+        exchange=default_exchange, #4
+        routing_key='video' #5
+    )
+)
