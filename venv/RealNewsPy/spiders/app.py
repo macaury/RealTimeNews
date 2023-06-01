@@ -59,7 +59,6 @@ def scrape_news(domains, urls):
     conteudo = json.dumps(new_data, ensure_ascii=False, indent=4)
     return conteudo
 
-
 @app.route("/news", methods=['GET'])
 def main():
     with app.app_context():
