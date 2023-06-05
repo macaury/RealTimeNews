@@ -1,6 +1,5 @@
 from spiders.app import scrape_news 
-from .celery import app
-
+from .my_celery import app
 
 import time
 import json
@@ -8,8 +7,7 @@ from celery import Celery
 import tqdm
 import requests
 
-
-
+from flask import jsonify
 
 
 
